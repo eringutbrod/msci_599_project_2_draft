@@ -16,6 +16,8 @@ Version control allows you to keep track of your work and helps you to easily ex
 
 Git has a tremendous amount of uses, and you can use the command line to perform advanced actions. However, in this class we will just be using Git's more basic functions. This is a gentle introduction to syncing RStudio and Github, so you can start using version control in minutes.
 
+![](doc/phd101212s_version_control.gif){width=40%}
+
 ### What are the benefits of using version control?
 
 Having a GitHub repo makes it easy for you to keep track of collaborative and personal projects - all files necessary for certain analyses can be held together and people can add in their code, graphs, etc. as the projects develop. Each file on GitHub has a history, making it easy to explore the changes that occurred to it at different time points. You can review other people's code, add comments to certain lines or the overall document, and suggest changes. For collaborative projects, GitHub allows you to assign tasks to different users, making it clear who is responsible for which part of the analysis. You can also ask certain users to review your code. For personal projects, version control allows you to keep track of your work and easily navigate among the many versions of the files you create, whilst also maintaining an online backup.
@@ -196,6 +198,11 @@ We can't repeat it enough: **always `Pull` before you `Push`.** `Pull` means tha
 Go back to your repository on Github, where you can now see all of your updated files online. Click on your README file on GitHub and then on `History` - this is where you can see the different versions of your script - obviously in real life situations you will make many changes as your work progresses - here we just have two. Thanks to Github and version control, you don't need to save hundreds of almost identical files (e.g. `Dissertation_script_25thFeb.R`, `Dissertation_script_26thFeb.R`) - you have one file and by clicking on the different commits, you can see what it looked like at different points in time.
 
 __You are now ready to add your scripts, plots, data files, etc. to your new project directory and follow the same workflow as outlined above - stage your files, commit, pull, push.__
+
+#### XKCD on Git commit messages:
+
+![](doc/xkcd_git_commit.png){width=40%}
+
 
 
 ## Potential problems
