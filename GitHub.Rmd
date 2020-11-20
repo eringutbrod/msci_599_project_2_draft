@@ -92,7 +92,7 @@ $ git config --list
 
 If you don't like your settings and want to change them, you can just repeat the commands above to update your email or your user name.
 
-### How does version control work?
+### The basics of version control with Git
 
 #### What is a repository?
 You can think of a repository (aka a repo) as a "master folder", everything associated with a specific project should be kept in a repo for that project. Repos can have folders within them, or just be separate files.
@@ -197,7 +197,7 @@ We can't repeat it enough: **always `Pull` before you `Push`.** `Pull` means tha
 
 Go back to your repository on Github, where you can now see all of your updated files online. Click on your README file on GitHub and then on `History` - this is where you can see the different versions of your script - obviously in real life situations you will make many changes as your work progresses - here we just have two. Thanks to Github and version control, you don't need to save hundreds of almost identical files (e.g. `Dissertation_script_25thFeb.R`, `Dissertation_script_26thFeb.R`) - you have one file and by clicking on the different commits, you can see what it looked like at different points in time.
 
-__You are now ready to add your scripts, plots, data files, etc. to your new project directory and follow the same workflow as outlined above - stage your files, commit, pull, push.__
+__You are now ready to add your scripts, plots, data files, etc. to your new project directory and follow the same workflow as outlined above - stage your files, commit, pull, push.__ If you have already created some files (scripts, documentation, etc.) for this project, go ahead and copy them into your project folder that you tied to the repository on GitHub. Otherwise, start creating new files and write your code, produce figures, draft papers, etc. and make sure you are saving them in your project folder. Whenever a file is added to this folder or updated inside of this folder, you'll see it appear in your Git pane in the upper-right corner of RStudio. At reasonable intervals, or whenever you get something accomplished, make sure that you commit, pull and push those new files or new changes out to the master branch of your repository in GitHub.
 
 #### XKCD on Git commit messages:
 
@@ -205,25 +205,29 @@ __You are now ready to add your scripts, plots, data files, etc. to your new pro
 
 
 
-## Potential problems
+### Potential problems
 
 Sometimes you will see error messages as you try to commit-pull-push. Usually the error message identifies the problem and which file it's associated with, if the message is more obscure, googling it is a good step towards solving the problem. Here are some potential problems that might arise:
 
-### Code conflicts
+#### Code conflicts
 
 While you were working on a certain part of a script, someone else was working on it, too. When you go through commit-pull-push, GitHub will make you decide which version you want to keep. This is called a code conflict, and you can't proceed until you've resolved it. You will see arrows looking like `>>>>>>>>>` around the two versions of the code - delete the version of the code you don't want to keep, as well as the arrows, and your conflict should disappear.
 
-### Pushing the wrong files
+#### Pushing the wrong files
 
 If you accidentally push what you didn't intend to, deleted many things (or everything!) and then pushed empty folders, you can revert your commit. You can keep reverting until you reach the point in time when everything was okay. This is an easy way out if you're the only person working in the repository - __be aware that if there are other people that have committed to the repository, reverting will also undo all of their work, as reverting refers to the repository as a whole, not just your own work in it.__
 
 Using these "undo" commands can be daunting, so make sure you read up on the different commands before you attempt anything that may delete work permanently: [here's a starter](https://www.atlassian.com/git/tutorials/undoing-changes/git-revert). It's a good idea to regularly back up your repository to an external hard drive _juuuust_ in case!  
 
+### For more information
 
-# 4. Sync and interact with your repository through the command line
-{: #github4}
+Here is a great reference guide for using Git and GitHub as an R programmer:
 
-Traditionally, Git uses the command line to perform actions on local Git repositories. In this tutorial we ignored the command line but it is necessary if you want more control over Git. There are several excellent introductory guides on version control using Git, e.g. [Prof Simon Mudd's Numeracy, Modelling and Data management guide](http://simon-m-mudd.github.io/NMDM_book/#_version_control_with_git), [The Software Carpentry guide](https://swcarpentry.github.io/git-novice/), and this [guide from the British Ecological Society Version Control workshop](https://github.com/BES2016Workshop/version-control). For more generic command line tools, look at this [general cheat sheet](https://www.git-tower.com/blog/command-line-cheat-sheet) and this [cheat sheet for mac users](https://github.com/0nn0/terminal-mac-cheatsheet). We have also created a table and flow diagram with some basic Git commands and how they fit into the Git/Github workflow. Orange lines refer to the core workflow, the blue lines describe extra functions and the green lines deal with branches:
+"Happy Git and GitHub for the useR" by Jenny Bryan and Jim Hester: https://happygitwithr.com/
+
+### Sync and interact with your repository through the command line
+
+Traditionally, Git uses the command line to perform actions on local Git repositories. In this class we don't use the command line but it is necessary if you want more control over Git. There are several excellent introductory guides on version control using Git, e.g. [Prof Simon Mudd's Numeracy, Modelling and Data management guide](http://simon-m-mudd.github.io/NMDM_book/#_version_control_with_git), [The Software Carpentry guide](https://swcarpentry.github.io/git-novice/), and this [guide from the British Ecological Society Version Control workshop](https://github.com/BES2016Workshop/version-control). For more generic command line tools, look at this [general cheat sheet](https://www.git-tower.com/blog/command-line-cheat-sheet) and this [cheat sheet for mac users](https://github.com/0nn0/terminal-mac-cheatsheet). We have also created a table and flow diagram with some basic Git commands and how they fit into the Git/Github workflow. Orange lines refer to the core workflow, the blue lines describe extra functions and the green lines deal with branches:
 
 
 
