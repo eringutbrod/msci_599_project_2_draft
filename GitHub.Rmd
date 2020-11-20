@@ -375,3 +375,12 @@ Traditionally, Git uses the command line to perform actions on local Git reposit
   </tr>
 </table>
 
+### Acknowledgements
+
+Some of the material for this tutorial was adapted from the following:
+
+Our Coding Club
+https://github.com/ourcodingclub/ourcodingclub.github.io/blob/master/_tutorials/git.md
+
+Dr. Allison Horst's ESM 206 course
+https://github.com/allisonhorst/esm-206-2018
