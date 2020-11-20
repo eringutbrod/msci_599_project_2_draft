@@ -203,6 +203,62 @@ __You are now ready to add your scripts, plots, data files, etc. to your new pro
 
 ![](doc/xkcd_git_commit.png){width=40%}
 
+### Using files on someone else's public GitHub
+
+Now that you can create your own repository (project) from scratch on GitHub, it's time to learn how to use some of the data, models and materials that's already available in other peoples' repositories. You can grab someone else's GitHub repo, work with it in RStudio, and push it back onto GitHub. 
+
+Let's say you found some data/models/ etc. on GitHub that's part of a public repository owned by a person you don't know. That person has a public repo because they want people to have access to their model. How can we get information from their repo into our github and then work with it in RStudio before sending out updated version back to github? That's what we'll do first.
+
+This requires a couple of steps:
+
+#### FORK
+
+As you can imagine, people you don't know usually don't want you to be able to update their files without them knowing it. That's why you can't actually change a file in a 'master branch'
+unless you've been added as a collaborator by the "owner". So instead of using and changing their original files, you need to fork their repo first. This essentially makes a copy of all information in their repo, and stores it as your own.
+
+There's a hysterical analysis on GitHub that examines the Harry Potter books and the aggressiveness of each character. Let's grab that and mess with it.
+
+* In github, navigate to the user andrewheiss's github page to find the 'Harry-Potter-aggression' (you can search for it)
+* Press 'Fork' in the top right
+* Now navigate back to your github account (if you click on your user picture in the top right,
+it'll bring down a menu where you can select "Your repositories"), and you'll see the forked repo exists in your world where you can mess with it
+
+#### CLONE
+
+Once you've forked a repo into your own github, you probably want to start working with it in RStudio. How?
+The easiest way is to get the repo URL from github, THEN create the corresponding project in RStudio that it'll communicate with. When you're in your forked repo that you want to work with:
+
+* Click on 'Clone or Download'
+* Select and Copy the ENTIRE URL
+* Open a new RStudio session
+* Choose New Project > **Version Control** > **Git** > Paste the URL from github into the
+'Repository URL' bar > Press TAB to auto-populate the project name > Make sure you're in the subdirectory you want to be in > Select 'Open in a new session' > Create project!
+
+Now, it kind of seems like you're back to working in an RStudio project like normal, right? And all of the files that were in the repo you forked are now in your working directory.
+But we also have version control power now.
+What does that mean? Let's make some changes in RStudio and find out.
+
+* Create a new markdown document
+* Load the tidyverse
+* Read in the Harry Potter aggression .csv file
+* Create a simplified version of 'aggressions per mention' just for Draco and Harry
+* Make a clustered column graph for the two (follow along)
+* Save it into the project folder (working directory)
+
+#### STAGE/COMMIT/PUSH
+
+Now your project in RStudio has been updated, but we want this new 'version' of the Project to be stored in github (that's kind of the point). We follow the process of Stage > Commit > Pull > Push to send versions back to github.
+Once you've saved your .Rmd (feel free to knit, too), it shows up in your working directory.
+
+* Click on the 'Git' tab (up by Environment/History)
+* Select files waiting to be committed (stage all of them)
+* Click 'Commit'
+* Add a short commit message (required), then press 'Commit'
+* No error = working
+* Press 'Pull' - the blue 'DOWN' icon - to make sure no other collaborators have added something to this repo (they didn't because this repo doesn't have any other collaborators)
+* Press 'Push' - the green 'UP' icon - to send the commits back to github
+* Refresh your GitHub repo, and see that the file(s) YOU created now exist in your repo. Cool!
+Cloud storage and version control!
 
 
 ### Potential problems
@@ -319,3 +375,4 @@ Traditionally, Git uses the command line to perform actions on local Git reposit
     <td>Save uncommitted changes in a temporary version and revert to the most recent commit</td>
   </tr>
 </table>
+
