@@ -238,12 +238,11 @@ Now, it kind of seems like you're back to working in an RStudio project like nor
 But we also have version control power now.
 What does that mean? Let's make some changes in RStudio and find out.
 
-* Create a new markdown document
-* Load the tidyverse
+* Create a new RMarkdown document
 * Read in the Harry Potter aggression .csv file
-* Create a simplified version of 'aggressions per mention' just for Draco and Harry
-* Make a clustered column graph for the two (follow along)
-* Save it into the project folder (working directory)
+* Create a simplified data.frame of 'aggressions per mention' just for Draco and Harry
+* Plot aggressions using a bar plot
+* Save the RMarkdown doc into the project folder (working directory)
 
 #### STAGE/COMMIT/PUSH
 
