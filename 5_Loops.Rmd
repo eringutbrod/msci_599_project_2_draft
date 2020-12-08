@@ -4,6 +4,10 @@ author: "MSCI 599"
 output: html_document
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.width=6, fig.asp = 0.618) 
+```
+
 ## for loops
 
 A `for` loop repeats a chunk of code many times, once for each element in a set of input. `for` loops provide a way to tell R, "Do this for every value of that." In R syntax, this looks like:

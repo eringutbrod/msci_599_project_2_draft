@@ -5,6 +5,10 @@ output: html_document
 self_contained: no
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.width=6, fig.asp = 0.618) 
+```
+
 # Unit I: Climate Change Module
 ### Exercise II: Melting Ice Sheets
 #### Skills: read data, line plot, bar plot, saving plots, merging, confidence intervals, indexing, arithmetic

@@ -4,6 +4,10 @@ author: "MSCI 599"
 output: html_document
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.width=6, fig.asp = 0.618) 
+```
+
 # Unit I: Climate Change Module
 ### Examining global temperature trends
 #### Skills: Reading .txt files, plotting, saving figures, if statements, for loops, subsetting

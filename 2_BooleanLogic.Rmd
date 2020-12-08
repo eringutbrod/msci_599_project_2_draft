@@ -4,6 +4,10 @@ author: "Erin Meyer-Gutbrod"
 output: html_document
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.width=6, fig.asp = 0.618) 
+```
+
 ### Logical Subsetting
 
 Do you remember R's logical data type? To recap, you can select values with a vector of `TRUE`s and `FALSE`s. The vector must be the same length as the dimension that you wish to subset. R will return every element that matches a TRUE:
